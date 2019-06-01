@@ -14,14 +14,20 @@
   <body>
     <div class="container">
       <div class="row header">
-        <span class="header-repo">Repo</span><span class="header-search">Search</span>
+        <div class="col-sm-12 text-center">
+          <span class="header-repo">Repo</span><span class="header-search">Search</span>
+        </div>
       </div>
 
       <div class="row">
-        <input type="text" name="username" id="username" placeholder="Username" size="40"/>
+        <div class="col-sm-12 text-center">
+          <input type="text" name="username" id="username" size="50" class="rq-form-element" autofocus/>
+        </div>
       </div>
-      <div class="row search-button">
-        <button onclick="getRepositories()">Search</button>
+      <div class="row button-row-margin">
+        <div class="col-sm-12 text-center">
+          <button class="search-button" onclick="getRepositories()">Search</button>
+        </div>
       </div>
 
       <div class="row">

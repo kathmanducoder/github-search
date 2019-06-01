@@ -12,6 +12,7 @@ function showRepositories() {
     .map(
       r =>
         '<div class="row repo-name">' +
+        '<span class="prompt">~></span>&nbsp' +
         r.name +
         '</div>' +
         '<div class="row link-line">' +

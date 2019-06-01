@@ -1,6 +1,6 @@
 .header {
   font-family: garamond;
-  font-size: 32px;
+  font-size: 36px;
   line-height: 150%;
   margin-top: 10px;
   margin-bottom: 5px;
@@ -15,8 +15,15 @@
   color: #7FDBFF;
 }
 
+.button-row-margin {
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
 .search-button {
-  margin-bottom: 30px;
+  border-radius: 25px;
+  color: green;
+  font-weight: bold;
 }
 
 .repo-name {
@@ -37,4 +44,9 @@
 
 .commit-date {
   font-style: italic;
+}
+
+.prompt {
+  color: orange;
+  font-weight: bold;
 }
