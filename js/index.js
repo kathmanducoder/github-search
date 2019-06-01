@@ -13,9 +13,16 @@ function showRepositories() {
       r =>
         '<div class="row repo-name">' +
         r.name +
+        '</div>' +
+        '<div class="row link-line">' +
+        ' <a href="#" data-repo="' + r.name + '"' +
+        ' onclick="getCommits(this)">Commit History</a>' +
         '</div>'
     )
     .join('')}`;
 
   document.getElementById('repositories').innerHTML = repoListStr;
+}
+
+function getCommits(htmlElement) {
 }
