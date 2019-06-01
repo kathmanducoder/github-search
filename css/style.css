@@ -14,3 +14,11 @@
 .header-search {
   color: #7FDBFF;
 }
+
+.search-button {
+  margin-bottom: 30px;
+}
+
+.repo-name {
+  color: #093145;
+}
