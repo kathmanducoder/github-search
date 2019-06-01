@@ -37,7 +37,7 @@ function getCommits(htmlElement) {
 function showCommits() {
   const commits = JSON.parse(this.responseText);
   debugger;
-  const commitsListStr = `${commits
+  const commitsListStr = `<div class="row commit-header">Commit History</div>${commits
     .map(
       commit =>
         '<div class="row commit-message">' +
