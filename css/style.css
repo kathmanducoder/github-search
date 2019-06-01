@@ -26,3 +26,15 @@
 .link-line {
   color: #3C6478;
 }
+
+.commit-message {
+  color: #107896;
+}
+
+.author-name {
+  font-weight: bold;
+}
+
+.commit-date {
+  font-style: italic;
+}

@@ -25,4 +25,31 @@ function showRepositories() {
 }
 
 function getCommits(htmlElement) {
+  const username = document.getElementById("username").value;
+  const reponame = htmlElement.dataset.repo;
+  const req = new XMLHttpRequest();
+  req.addEventListener('load', showCommits);
+  req.open('GET', `https://api.github.com/repos/${username}/${reponame}/commits`);
+  req.send();
+}
+
+function showCommits() {
+  const commits = JSON.parse(this.responseText);
+  debugger;
+  const commitsListStr = `${commits
+    .map(
+      commit =>
+        '<div class="row commit-message">' +
+        commit.commit.message +
+        '</div>' +
+        '<div class="row">' +
+        '<span class="author-name">' + commit.commit.author.name + '</span>' +
+        '&nbsp' +
+        'committed on' +
+        '&nbsp' +
+        '<span class="commit-date">' + commit.commit.author.date + '</span>' +
+        '</div>'
+    )
+    .join('')}`;
+  document.getElementById('commits').innerHTML = commitsListStr;
 }
