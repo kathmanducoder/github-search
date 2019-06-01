@@ -21,12 +21,12 @@
 
       <div class="row">
         <div class="col-sm-12 text-center">
-          <input type="text" name="username" id="username" size="50" class="rq-form-element" autofocus/>
+          <input type="text" name="username" id="username" size="50" class="rq-form-element" autofocus onkeypress="return searchKeyPress(event);"/>
         </div>
       </div>
       <div class="row button-row-margin">
         <div class="col-sm-12 text-center">
-          <button class="search-button" onclick="getRepositories()">Search</button>
+          <button id="search_button" class="search-button" onclick="getRepositories()">Search</button>
         </div>
       </div>
 

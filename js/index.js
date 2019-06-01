@@ -1,3 +1,14 @@
+function searchKeyPress(event) {
+  event = event || window.event;
+    //enter key
+  if (event.keyCode == 13) {
+    document.getElementById('search_button').click();
+    return false;
+  }
+  return true;
+}
+
+
 function getRepositories() {
   const username = document.getElementById("username").value;
   const req = new XMLHttpRequest();
