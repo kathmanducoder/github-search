@@ -2,6 +2,6 @@
 
 ## Description
 
-A JavaScript app that uses Github's API to search for public repositories belonging to a user. Then uses AJAX to load commit history for chosen repository.
+A JavaScript app that uses Github's API to search for public repositories belonging to a user. Then provides an option to load commit history for each repository asynchronously with XMLHttpRequest(XHR).
 
 ![Screenshot](https://i.imgur.com/p1VwhQn.png)
