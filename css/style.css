@@ -7,7 +7,7 @@
   font-weight: bold;
 }
 
-.header-repo {
+.header-github {
   color: #0074D9;
 }
 
@@ -57,5 +57,5 @@
   line-height: 150%;
   margin-bottom: 15px;
   font-weight: bold;
-  color: #DA621E; //darker coral
+  color: #DA621E;
 }
